@@ -1,0 +1,35 @@
+
+一，realsense　sdk 安装
+realsense opencv 官方示例：https://github.com/IntelRealSense/librealsense/tree/master/wrappers/opencv
+中文博客讲解安装sdk       ：https://blog.csdn.net/z17816876284/article/details/79159518
+
+build步骤:
+	mkdir librealsense
+	cd librealsense
+	cmake .. -DBUILD_EXAMPLES=true
+	sudo make
+        sudo make install (安装在了/usr/local/bin  /usr/local/include /usr/local/lib)
+测试：
+　　　　	cd /build/example/capture
+    	./rs-capture
+
+
+
+二，opencv安装
+
+opencv 3.4 github仓库：https://github.com/opencv/opencv
+
+opencv 源代码构建官网说明：https://docs.opencv.org/trunk/d7/d9f/tutorial_linux_install.html 
+(注意：
+１．cmake 之前先安装libavresample:  sudo apt-get install libavresample-dev
+２．由讨论得到的官方示例：https://community.intel.com/t5/Items-with-no-label/OpenCV-and-D435/td-p/477442)
+
+
+
+opencv 源代码构建博客说明: https://blog.csdn.net/qq_38236355/article/details/88864023 
+
+
+三，示例
+官方示例：https://github.com/IntelRealSense/librealsense/tree/master/examples
+
+
